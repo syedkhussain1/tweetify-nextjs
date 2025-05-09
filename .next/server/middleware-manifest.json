@@ -1,6 +1,26 @@
 {
   "sortedMiddleware": [],
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/api/gpt/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/gpt/route.js"
+      ],
+      "name": "app/api/gpt/route",
+      "page": "/api/gpt/route",
+      "matchers": [
+        {
+          "regexp": "^/api/gpt$",
+          "originalSource": "/api/gpt"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    }
+  },
   "version": 2
 }

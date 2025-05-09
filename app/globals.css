@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #848a90;
+  margin: 0;
+}
+
+.container {
+  width: 2000px;
+  /* max-width: 1000px; */
+  margin: 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #b7aeb9;
+  border-color: #b7aeb9;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loading-spinner {
+  display: inline-block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: #e02aff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.imageStyleContainer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.checkboxContainer {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkboxLabel {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loadingContainer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+  display: block;
+  font-size: 24px;
+  color: #3498db;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
